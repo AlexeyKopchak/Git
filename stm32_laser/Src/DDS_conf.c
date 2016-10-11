@@ -19,9 +19,9 @@
  * FTW1 is (10/SYSCLK)* 2^32 or 0x06A7EF9D in hex
  * NLSCW is 
  *
- * (FTW1 - FTW0) * 4 * N					 (10 MHz - 5MHz)* 4 * 200
+ * (FTW1 - FTW0) * 4 * N	   (10 MHz - 5MHz)* 4 * 200
  * --------------------- * 2^32 -> ------------------------ * 2^32 = 0x3A
- * NLSCW * (SYSCLK^2)								1000 ms * (384 MHz)^2
+ * NLSCW * (SYSCLK^2)		   1000 ms * (384 MHz)^2
  *
  * Where N = 200 ramp rate (0x64 on hex)
  * Combining the rising ramp rate, first byte, and the
